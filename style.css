@@ -1,0 +1,48 @@
+p{
+    white-space: pre;
+    color:white;
+}
+body{
+    background-color:black;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+}
+img{
+    width:210px;
+    height:auto;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows:250px 75px;
+    grid-template-areas:
+    "header1 header2 header3"
+    ". footer .";
+    justify-content: center;
+}
+#rock{
+    grid-area:header1;
+}
+#paper{
+    grid-area:header2;
+}
+#scissors{
+    grid-area:header3;
+}
+#reset{
+    grid-area:footer;
+    margin-top:25px;
+}
+/*button{
+    background-image: url('images/rock.jpeg') blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent; /* Hide the 'submit' text */
+    /*border: none; /* Remove the border */
+/*}*/
+.para{
+    display:flex;
+    justify-content:center;
+}
